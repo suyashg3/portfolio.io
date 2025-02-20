@@ -143,71 +143,45 @@
         <!-- End .education-block -->
     </div>
     <!-- End #education -->
+<div id="projects" class="background-alt">
+    <h2 class="heading">Projects</h2>
+    <div class="container">
+        <div class="row">
 
-    <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
-        <div class="container">
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-                    <!-- End .project-image -->					                  
-                    <div class="project-info">
-                        <h3>Physical Design Implementation on 7nm</h3>
-                        <p>
-                            I worked on a 7nm physical design with 135 macros, targeting a 1GHz operating frequency and 1.2 million gates. My responsibilities included floorplanning, placement, clock tree synthesis (CTS), routing, and physical verification using Cadence Innovus. To meet design specifications, I performed multiple iterations to resolve timing closure challenges, ensuring optimal performance. Additionally, I conducted signoff checks, including physical verification and timing analysis, while addressing DRV and DRC violations. To achieve optimal timing, I analyzed and fixed setup and hold violations, ensuring the design met all required constraints.                        
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Timing Analysis and ECO on 14nm</h3>
-                        <p>
-                            I worked on a 14nm design with 7 macros, 1.4 million instances, 16 metal layers, 24 functional clocks, and 18 scan clocks, operating at 1GHz. My primary focus was timing analysis, optimization, and ECO implementation using Cadence PrimeTime (PT), Star-RC, and Tweaker. I analyzed timing reports and explored PT shell commands for in-depth timing analysis, identifying various timing violations and optimizing data path delays. To resolve issues, I generated and applied Engineering Change Orders (ECOs) using Tweaker, ensuring efficient timing fixes. Additionally, I addressed setup and hold violations through cell sizing and swapping strategies, improving overall design performance.                        </p>
-                        
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-				<!-- End .project -->
-				<div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>TSPC Flip-Flop Integration & Timing Analysis</h3>
-                        <p>
-                            I worked on TSPC flip-flop integration and timing optimization to enhance high-speed operation, reduce power consumption, and enable single-phase clocking in a digital design. Using Cadence Genus, Innovus, Tempus, and Virtuoso, I replaced conventional D flip-flops with TSPC flip-flops, improving overall design efficiency. I conducted synthesis, timing analysis, and optimization, ensuring the design met performance targets. Additionally, I characterized TSPC cells in Virtuoso and integrated them into Innovus while performing setup timing checks, DRV analysis, and resolving max transition and max capacitance violations. During the process, I tackled glitches caused by timing conflicts through transistor sizing and drive strength adjustments. To further refine the design, I addressed simulation and timing analysis challenges using Tempus and SPICE simulations, ensuring robust functionality and improved performance.                      </p>
-                        
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-				<!-- End .project -->
-				<div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>TGPU Design and Implementation</h3>
-                        <p>
-                           I worked on a minimal GPU architecture in Verilog, exploring SIMD programming, memory management, and parallelization while integrating the Physical Design (PD) flow, constraint definition, and timing analysis. Using Verilog, Cadence Genus, Innovus, and PrimeTime, I implemented GPU compute cores, memory controllers, and a dispatcher, optimizing SIMD parallelism. I developed and simulated matrix operations, analyzed execution traces, and explored RISC-V concepts for ML accelerators. The PD flow included RTL synthesis, floorplanning, placement, CTS, routing, and timing closure, achieving 2ps slack reduction. I resolved library integration issues, optimized constraints, and ensured functional correctness. The final design had ~500K cells, 8 macros, and a 100MHz operating frequency.                     
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-				<!-- End .project -->
-            </div>
-        </div>
+            <div class="project shadow-large">
+                <div class="project-info">
+                    <h3>Physical Design Implementation on 7nm</h3>
+                    <p>
+                        I worked on a 7nm physical design with 135 macros, targeting a 1GHz operating frequency and 1.2 million gates. My responsibilities included floorplanning, placement, clock tree synthesis (CTS), routing, and physical verification using Cadence Innovus. To meet design specifications, I performed multiple iterations to resolve timing closure challenges, ensuring optimal performance. Additionally, I conducted signoff checks, including physical verification and timing analysis, while addressing DRV and DRC violations. To achieve optimal timing, I analyzed and fixed setup and hold violations, ensuring the design met all required constraints.
+                    </p>
+                </div> </div> <div class="project shadow-large">
+                <div class="project-info">
+                    <h3>Timing Analysis and ECO on 14nm</h3>
+                    <p>
+                        I worked on a 14nm design with 7 macros, 1.4 million instances, 16 metal layers, 24 functional clocks, and 18 scan clocks, operating at 1GHz. My primary focus was timing analysis, optimization, and ECO implementation using Cadence PrimeTime (PT), Star-RC, and Tweaker. I analyzed timing reports and explored PT shell commands for in-depth timing analysis, identifying various timing violations and optimizing data path delays. To resolve issues, I generated and applied Engineering Change Orders (ECOs) using Tweaker, ensuring efficient timing fixes. Additionally, I addressed setup and hold violations through cell sizing and swapping strategies, improving overall design performance.
+                    </p>
+                </div> </div> <div class="project shadow-large">
+                <div class="project-info">
+                    <h3>TSPC Flip-Flop Integration & Timing Analysis</h3>
+                    <p>
+                        I worked on TSPC flip-flop integration and timing optimization to enhance high-speed operation, reduce power consumption, and enable single-phase clocking in a digital design. Using Cadence Genus, Innovus, Tempus, and Virtuoso, I replaced conventional D flip-flops with TSPC flip-flops, improving overall design efficiency. I conducted synthesis, timing analysis, and optimization, ensuring the design met performance targets. Additionally, I characterized TSPC cells in Virtuoso and integrated them into Innovus while performing setup timing checks, DRV analysis, and resolving max transition and max capacitance violations. During the process, I tackled glitches caused by timing conflicts through transistor sizing and drive strength adjustments. To further refine the design, I addressed simulation and timing analysis challenges using Tempus and SPICE simulations, ensuring robust functionality and improved performance.
+                    </p>
+                </div> </div> <div class="project shadow-large">
+                <div class="project-info">
+                    <h3>TGPU Design and Implementation</h3>
+                    <p>
+                        I worked on a minimal GPU architecture in Verilog, exploring SIMD programming, memory management, and parallelization while integrating the Physical Design (PD) flow, constraint definition, and timing analysis. Using Verilog, Cadence Genus, Innovus, and PrimeTime, I implemented GPU compute cores, memory controllers, and a dispatcher, optimizing SIMD parallelism. I developed and simulated matrix operations, analyzed execution traces, and explored RISC-V concepts for ML accelerators. The PD flow included RTL synthesis, floorplanning, placement, CTS, routing, and timing closure, achieving 2ps slack reduction. I resolved library integration issues, optimized constraints, and ensured functional correctness. The final design had ~500K cells, 8 macros, and a 100MHz operating frequency.
+                    </p>
+                </div> </div> </div>
     </div>
-    <!-- End #projects -->
+</div> ```
 
+Key changes:
+
+* **Removed `project-image` divs:**  All instances of `<div class="project-image">` and their contents (the `<img>` tags) have been removed. This is the primary change to remove the images.
+* **Preserved Structure:** The overall structure of the project divs (including the `project`, `project-info`, `h3`, and `p` elements) has been kept intact. This maintains the layout and styling you likely have associated with these elements.
+
+This revised code will display only the project titles and descriptions, without any images.  If you have CSS styling applied to the `.project-image` class, you might want to remove or adjust that CSS as well, since that class is no longer present in the HTML.
     <div id="skills">
         <h2 class="heading">Skills</h2>
         <ul>
