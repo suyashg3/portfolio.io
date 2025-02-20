@@ -144,24 +144,133 @@
     </div>
     <!-- End #education -->
 
-    <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
-        <div class="container">
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-                    <!-- End .project-image -->					                  
-                    <div class="project-info">
-                        <h3>Physical Design Implementation on 7nm</h3>
-                        <p>
-                            Designed and optimized a 7nm SoC with 135 macros and 1.2M gates at 1GHz. Executed floorplanning, placement, CTS, routing, and timing closure in Innovus. Addressed DRV/DRC violations and performed multiple iterations to meet timing specifications.                        </p>
-                        <a href="#">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        .modal-content {
+            background-color: white;
+            margin: 10% auto;
+            padding: 20px;
+            width: 50%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div id="projects" class="background-alt">
+    <h2 class="heading">Projects</h2>
+    <div class="container">
+        <div class="row">
+            <div class="project shadow-large">
+                <div class="project-info">
+                    <h3>Physical Design Implementation on 7nm</h3>
+                    <p>
+                        Designed and optimized a 7nm SoC with 135 macros and 1.2M gates at 1GHz. Executed floorplanning, placement, CTS, routing, and timing closure in Innovus. Addressed DRV/DRC violations and performed multiple iterations to meet timing specifications.
+                    </p>
+                    <button id="openModalBtn">View Project</button>
                 </div>
-                <!-- End .project -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Structure -->
+<div id="project-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeModalBtn">&times;</span>
+        <h2>Advanced Physical Design Implementation on 7nm Node</h2>
+        <h3>Project Overview:</h3>
+        <ul>
+            <li><strong>Technology Node:</strong> 7nm</li>
+            <li><strong>Macro Count:</strong> 135 Macros</li>
+            <li><strong>Operating Frequency:</strong> 1 GHz</li>
+            <li><strong>Gate Count:</strong> 1.2M</li>
+            <li><strong>Number of Clocks:</strong> 4</li>
+            <li><strong>Tool Used:</strong> Cadence Innovus</li>
+        </ul>
+        <h3>Roles & Responsibilities:</h3>
+        <h4>Floorplanning & Placement:</h4>
+        <ul>
+            <li>Developed an optimized floorplan, ensuring proper macro placement and power grid planning.</li>
+            <li>Managed congestion and optimized placement to enhance timing performance.</li>
+        </ul>
+        <h4>Clock Tree Synthesis (CTS):</h4>
+        <ul>
+            <li>Designed and optimized clock distribution for 4 clocks, ensuring minimal skew and low power consumption.</li>
+            <li>Performed clock balancing to reduce uncertainties in timing analysis.</li>
+        </ul>
+        <h4>Routing & Physical Verification:</h4>
+        <ul>
+            <li>Executed global and detailed routing while minimizing congestion and timing violations.</li>
+            <li>Performed Design Rule Checks (DRC) and Layout Versus Schematic (LVS) debugging to ensure signoff quality.</li>
+            <li>Analyzed and resolved Design Rule Violations (DRV) and DRC violations to align with design constraints.</li>
+        </ul>
+        <h4>Timing Closure & ECO Implementation:</h4>
+        <ul>
+            <li>Conducted static timing analysis (STA) using PrimeTime, addressing setup and hold violations.</li>
+            <li>Performed iterative ECOs, including cell sizing, buffer insertion, and logic restructuring, to meet timing closure.</li>
+            <li>Implemented signal integrity fixes, focusing on IR drop and Electromigration (EM) analysis.</li>
+        </ul>
+        <h4>Signoff Checks & Final Validation:</h4>
+        <ul>
+            <li>Verified design robustness through noise analysis and power grid integrity verification.</li>
+            <li>Ensured final design met all functional and timing constraints before tapeout.</li>
+        </ul>
+    </div>
+</div>
+
+<!-- JavaScript for Modal -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var modal = document.getElementById("project-modal");
+        var openBtn = document.getElementById("openModalBtn");
+        var closeBtn = document.getElementById("closeModalBtn");
+
+        openBtn.addEventListener("click", function () {
+            modal.style.display = "block";
+        });
+
+        closeBtn.addEventListener("click", function () {
+            modal.style.display = "none";
+        });
+
+        window.addEventListener("click", function (event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
 
                 <div class="project shadow-large">
                     <div class="project-image">
